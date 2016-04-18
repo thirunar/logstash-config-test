@@ -1,12 +1,14 @@
 package com.logstash.configchecker;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConfigTestApplication {
+@EnableAutoConfiguration
+public class ConfigChecker {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigTestApplication.class, args);
+		SpringApplication.run(ConfigChecker.class, args);
 	}
 }
